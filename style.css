@@ -1,0 +1,173 @@
+/* Basic settings for the whole page */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+header {
+    background-color: #243b55;
+    padding: 12px 7%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    margin: 0;
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #f6c85f;
+}
+
+/* Welcome section */
+.intro {
+    background-color: #dce8f5;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h1 {
+    color: #243b55;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.intro p {
+    margin-top: 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #243b55;
+    color: white;
+    text-decoration: none;
+    padding: 9px 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #385b7c;
+}
+
+/* Main content and sections */
+main {
+    width: 86%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 7px;
+    border-left: 4px solid #f6c85f;
+}
+
+.card h2 {
+    color: #243b55;
+    margin-top: 0;
+}
+
+.card h3 {
+    color: #385b7c;
+    margin-bottom: 4px;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.item p {
+    margin: 3px 0;
+}
+
+.small-text {
+    color: #777777;
+    font-size: 14px;
+}
+
+.plain-list {
+    padding-left: 22px;
+}
+
+/* Skill labels */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 15px;
+}
+
+.skill-list span {
+    background-color: #e6eef7;
+    color: #243b55;
+    padding: 6px 11px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Contact link */
+.card a {
+    color: #243b55;
+}
+
+/* Footer */
+footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Simple layout changes for smaller screens */
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .intro h1 {
+        font-size: 25px;
+    }
+
+    main {
+        width: 92%;
+    }
+}
